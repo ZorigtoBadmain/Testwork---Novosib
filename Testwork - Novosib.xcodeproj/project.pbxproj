@@ -13,6 +13,14 @@
 		3512313324D5114D00F2C189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512313124D5114D00F2C189 /* Main.storyboard */; };
 		3512313524D5114F00F2C189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3512313424D5114F00F2C189 /* Assets.xcassets */; };
 		3512313824D5114F00F2C189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512313624D5114F00F2C189 /* LaunchScreen.storyboard */; };
+		3512314024D5129700F2C189 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512313F24D5129700F2C189 /* PostTableViewCell.swift */; };
+		3512314224D5130100F2C189 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314124D5130100F2C189 /* NetworkService.swift */; };
+		3512314424D5141000F2C189 /* ModelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314324D5141000F2C189 /* ModelPost.swift */; };
+		3512314624D5240A00F2C189 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314524D5240A00F2C189 /* NetworkError.swift */; };
+		3512314824D59F6C00F2C189 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314724D59F6C00F2C189 /* CommentViewController.swift */; };
+		3512314A24D6D8B000F2C189 /* ModelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314924D6D8B000F2C189 /* ModelComment.swift */; };
+		3512314C24D6DC8000F2C189 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512314B24D6DC8000F2C189 /* CommentTableViewCell.swift */; };
+		358E9E9824D6E9CD00CAC9CE /* NetworkServiceComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358E9E9724D6E9CD00CAC9CE /* NetworkServiceComment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		3512313424D5114F00F2C189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3512313724D5114F00F2C189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3512313924D5114F00F2C189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3512313F24D5129700F2C189 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		3512314124D5130100F2C189 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3512314324D5141000F2C189 /* ModelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPost.swift; sourceTree = "<group>"; };
+		3512314524D5240A00F2C189 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3512314724D59F6C00F2C189 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		3512314924D6D8B000F2C189 /* ModelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelComment.swift; sourceTree = "<group>"; };
+		3512314B24D6DC8000F2C189 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		358E9E9724D6E9CD00CAC9CE /* NetworkServiceComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceComment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,119 @@
 		3512312A24D5114D00F2C189 /* Testwork - Novosib */ = {
 			isa = PBXGroup;
 			children = (
+				358E9EA424D6ECA500CAC9CE /* Supporting files */,
+				358E9EA324D6EC8A00CAC9CE /* Error */,
+				358E9E9E24D6EC0700CAC9CE /* Comment */,
+				358E9E9924D6EB8400CAC9CE /* Post */,
+				3512313124D5114D00F2C189 /* Main.storyboard */,
+			);
+			path = "Testwork - Novosib";
+			sourceTree = "<group>";
+		};
+		358E9E9924D6EB8400CAC9CE /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				358E9E9C24D6EBAC00CAC9CE /* View */,
+				358E9E9B24D6EBA400CAC9CE /* Model */,
+				358E9E9A24D6EB9500CAC9CE /* Controller */,
+				358E9E9D24D6EBC500CAC9CE /* Service */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		358E9E9A24D6EB9500CAC9CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3512312F24D5114D00F2C189 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		358E9E9B24D6EBA400CAC9CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3512314324D5141000F2C189 /* ModelPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		358E9E9C24D6EBAC00CAC9CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3512313F24D5129700F2C189 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		358E9E9D24D6EBC500CAC9CE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3512314124D5130100F2C189 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		358E9E9E24D6EC0700CAC9CE /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				358E9EA224D6EC3C00CAC9CE /* View */,
+				358E9EA124D6EC3000CAC9CE /* Model */,
+				358E9EA024D6EC1D00CAC9CE /* Controller */,
+				358E9E9F24D6EC1400CAC9CE /* Service */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		358E9E9F24D6EC1400CAC9CE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				358E9E9724D6E9CD00CAC9CE /* NetworkServiceComment.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		358E9EA024D6EC1D00CAC9CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3512314724D59F6C00F2C189 /* CommentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		358E9EA124D6EC3000CAC9CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3512314924D6D8B000F2C189 /* ModelComment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		358E9EA224D6EC3C00CAC9CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3512314B24D6DC8000F2C189 /* CommentTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		358E9EA324D6EC8A00CAC9CE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3512314524D5240A00F2C189 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		358E9EA424D6ECA500CAC9CE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				3512312B24D5114D00F2C189 /* AppDelegate.swift */,
 				3512312D24D5114D00F2C189 /* SceneDelegate.swift */,
-				3512312F24D5114D00F2C189 /* ViewController.swift */,
-				3512313124D5114D00F2C189 /* Main.storyboard */,
 				3512313424D5114F00F2C189 /* Assets.xcassets */,
 				3512313624D5114F00F2C189 /* LaunchScreen.storyboard */,
 				3512313924D5114F00F2C189 /* Info.plist */,
 			);
-			path = "Testwork - Novosib";
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +258,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358E9E9824D6E9CD00CAC9CE /* NetworkServiceComment.swift in Sources */,
+				3512314824D59F6C00F2C189 /* CommentViewController.swift in Sources */,
+				3512314A24D6D8B000F2C189 /* ModelComment.swift in Sources */,
+				3512314224D5130100F2C189 /* NetworkService.swift in Sources */,
+				3512314624D5240A00F2C189 /* NetworkError.swift in Sources */,
 				3512313024D5114D00F2C189 /* ViewController.swift in Sources */,
 				3512312C24D5114D00F2C189 /* AppDelegate.swift in Sources */,
 				3512312E24D5114D00F2C189 /* SceneDelegate.swift in Sources */,
+				3512314C24D6DC8000F2C189 /* CommentTableViewCell.swift in Sources */,
+				3512314024D5129700F2C189 /* PostTableViewCell.swift in Sources */,
+				3512314424D5141000F2C189 /* ModelPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Testwork - Novosib/Info.plist";
+				INFOPLIST_FILE = "Testwork - Novosib/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Testwork - Novosib/Info.plist";
+				INFOPLIST_FILE = "Testwork - Novosib/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
